@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#17263b">
+<title>My Beginner Thai Practice Deck</title>
+<style>
+:root{--navy:#17263b;--navy2:#22364e;--text:#203044;--muted:#67798d;--paper:#f6f8fb;--white:#fff;--line:#dde5ec;--teal:#137a71;--teal-pale:#e4f5f0;--coral:#e9895e;--gold:#dbab52;--red:#b54e48;--shadow:0 16px 44px rgba(28,46,70,.075)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--text);font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.48}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid rgba(19,122,113,.33);outline-offset:2px}a{color:inherit}.wrap{max-width:1130px;margin:0 auto;padding:0 22px}.top{background:var(--navy);color:#fff;position:relative;overflow:hidden}.top:after{content:"";position:absolute;width:340px;height:340px;border:55px solid rgba(255,255,255,.045);border-radius:50%;right:-140px;top:-170px;pointer-events:none}.topinner{position:relative;z-index:1;padding-top:26px;padding-bottom:36px}.brand{display:flex;align-items:center;justify-content:space-between;gap:14px}.brandmark{font-weight:800;letter-spacing:.015em;font-size:18px}.brandmark span{display:inline-flex;align-items:center;justify-content:center;background:#ed946d;color:#18283b;width:32px;height:32px;border-radius:10px;margin-right:9px}.offline{font-size:12px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);border-radius:999px;padding:6px 12px;color:#d9e7ef}.eyebrow{font-size:11px;text-transform:uppercase;font-weight:800;letter-spacing:.18em;color:#b7d6cf;margin:36px 0 8px}.hero h1{font-size:clamp(30px,4.4vw,51px);letter-spacing:-.045em;line-height:1.08;margin:0;font-weight:820;max-width:800px}.hero p{max-width:630px;color:#cad8e7;font-size:16px;margin:13px 0 0}.tabs-wrap{margin-top:-20px;position:relative;z-index:3}.tabs{background:#fff;padding:7px;border-radius:15px;display:flex;gap:5px;box-shadow:var(--shadow);border:1px solid #e5eaf0;overflow:auto}.tab{flex:1;white-space:nowrap;padding:11px 13px;border:0;background:transparent;border-radius:10px;color:#657789;font-size:14px;font-weight:750}.tab.active{background:var(--navy);color:#fff}.main{padding:26px 0 55px}.panel{display:none}.panel.active{display:block}.section-header{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}.section-header h2{margin:0;font-size:23px;letter-spacing:-.025em}.sub{color:var(--muted);font-size:14px;margin:5px 0 0}.filter-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.filter-bar select,.filter-bar input,.select{border:1px solid var(--line);background:#fff;color:var(--text);border-radius:10px;padding:10px 12px;font-size:14px;max-width:100%}.tag{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:850;color:var(--teal);background:var(--teal-pale);padding:5px 10px;border-radius:100px}.muted{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:20px}.stat{background:#fff;border:1px solid var(--line);border-radius:15px;padding:17px 19px;min-width:0}.stat .value{font-size:31px;font-weight:850;letter-spacing:-.04em;line-height:1.18}.stat .name{font-size:12px;color:var(--muted);margin-top:5px}.meter{height:8px;background:#e7edf1;border-radius:50px;overflow:hidden}.meter span{display:block;height:100%;background:linear-gradient(90deg,#0d756e,#56b3a2);border-radius:50px;transition:width .25s}.barline{display:flex;justify-content:space-between;gap:10px;font-size:13px;margin-bottom:7px}.card{background:#fff;border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow);padding:23px}.two-col{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(250px,.85fr);gap:17px}.controls{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin-bottom:17px}.controls label{color:#64778a;font-size:13px;font-weight:750}.btn{border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px 15px;color:var(--text);font-weight:750;font-size:14px}.btn:hover:not(:disabled){filter:brightness(.97)}.btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}.btn.teal{background:var(--teal);color:#fff;border-color:var(--teal)}.btn.outline{background:transparent}.btn.small{padding:7px 10px;font-size:12px}.btn.wide{width:100%}.btn.bad{border-color:#f1d5d1;background:#fdf2f1;color:#93413b}.btn.hard{border-color:#f5e2bc;background:#fff9ee;color:#8a631e}.btn.good{border-color:#c7e5da;background:#ecf8f2;color:#14705b}.btn.easy{border-color:#cce0ef;background:#ecf4fb;color:#245b80}.flash{min-height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;text-align:center;background:linear-gradient(150deg,#fff 35%,#f4f8f9);border:1px solid #dbe5e9;border-radius:16px;padding:45px 22px 30px;user-select:none;cursor:pointer;transition:transform .15s,border-color .2s}.flash:hover{border-color:#9bbab6;transform:translateY(-1px)}.flash .corner{position:absolute;top:15px;left:17px;color:var(--muted);font-size:12px}.flash .star{position:absolute;top:7px;right:11px;border:0;background:transparent;font-size:25px;color:#b4c1ca;padding:8px;line-height:1}.flash .star.saved{color:var(--gold)}.flash .prompt{font-size:12px;text-transform:uppercase;letter-spacing:.15em;font-weight:800;color:var(--teal);margin-bottom:16px}.flash .big{font-size:clamp(27px,4vw,43px);font-weight:850;line-height:1.23;letter-spacing:-.035em;overflow-wrap:anywhere}.flash .hint{font-size:14px;color:var(--muted);margin-top:18px;max-width:550px}.flash .back{margin-top:22px;background:var(--navy);color:white;border-radius:12px;padding:14px 18px;width:100%;max-width:520px}.flash .back .answer{font-size:21px;font-weight:820;overflow-wrap:anywhere}.flash .back .extra{font-size:13px;color:#d7e4eb;margin-top:6px}.flash .tap{position:absolute;bottom:13px;font-size:12px;color:#85939f}.rating{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:13px}.rating .btn{padding:11px 4px}.studyfoot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:14px;color:var(--muted);font-size:13px;flex-wrap:wrap}.side h3,.card h3{font-size:17px;margin:0 0 14px}.side p{font-size:14px;color:var(--muted)}.steps{display:grid;gap:12px;margin-top:14px}.step{display:flex;gap:10px;align-items:flex-start;font-size:14px}.bubble{border-radius:10px;padding:4px 10px;background:#e6f5f0;color:var(--teal);font-weight:800;flex:none}.divider{height:1px;background:var(--line);margin:20px 0}.smallprint{font-size:12px;color:var(--muted)}.empty{background:#fff;border:1px dashed #bfcdd7;padding:35px 20px;text-align:center;border-radius:15px}.quizcard{min-height:340px}.quizprompt{font-size:28px;font-weight:820;line-height:1.27;margin:20px 0 22px;letter-spacing:-.02em}.options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.option{padding:15px;text-align:left;border-radius:12px;border:1px solid #d9e3eb;background:#fff;color:var(--text);font-weight:670}.option.correct{background:#e7f7ef;border-color:#82c9a6}.option.wrong{background:#fdf0ef;border-color:#e4afa9}.feedback{font-size:14px;background:#f4f7f9;border-radius:11px;padding:15px;margin-top:18px}.scene-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:14px 0 20px}.scene{border:1px solid var(--line);border-radius:12px;text-align:left;background:#fff;padding:13px}.scene.active{border-color:var(--teal);background:#eef8f5}.scene .name{font-weight:810}.scene .detail{color:var(--muted);font-size:12px;margin-top:3px}.chatbox{background:#f5f8fa;padding:20px;border-radius:15px;min-height:250px}.speech{background:#fff;padding:16px;border-radius:15px 15px 15px 4px;border:1px solid var(--line);max-width:85%;margin-bottom:15px}.speech .who{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);font-weight:900;margin-bottom:7px}.speech .words{font-size:20px;font-weight:780}.taskbox{margin-left:auto;background:var(--navy);color:#fff;padding:16px;border-radius:15px 15px 4px 15px;max-width:86%}.taskbox .who{font-size:11px;color:#c4dae5;font-weight:800;letter-spacing:.06em;margin-bottom:7px}.answerbox{background:#e2f5ee;color:#154e47;padding:14px;border-radius:10px;margin-top:15px;font-weight:800;overflow-wrap:anywhere}.list-tools{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0}.list-tools input{min-width:220px;flex:1}.phrase-list{display:grid;gap:8px}.phrase-row{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 15px;display:flex;justify-content:space-between;align-items:center;gap:12px}.phrase-row .thai{font-size:16px;font-weight:790;overflow-wrap:anywhere}.phrase-row .translation{color:#52687a;font-size:13px;margin-top:3px}.phrase-row .note{color:#8493a0;font-size:12px;margin-top:4px}.phrase-row .actions{display:flex;gap:7px;align-items:center;flex:none}.starbtn{color:#a9b6bf;border:0;background:transparent;font-size:22px;line-height:1;padding:4px 7px}.starbtn.saved{color:var(--gold)}.section-progress{display:grid;gap:16px}.progressrow{display:grid;gap:6px}.hintlist{margin:0;padding-left:19px;color:#53677b;font-size:14px}.hintlist li{margin-bottom:10px}.settings{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:10px 0 16px}.kbd{display:inline-block;font:11px/1.3 monospace;padding:3px 5px;border-radius:5px;border:1px solid #d4dde4;color:#6a7c8b;background:#fbfcfd}.footer{text-align:center;font-size:12px;color:#8493a0;margin-top:27px}.toast{position:fixed;right:19px;bottom:20px;background:var(--navy);color:#fff;border-radius:12px;padding:12px 17px;font-size:13px;box-shadow:var(--shadow);z-index:20;max-width:340px;opacity:0;transform:translateY(15px);pointer-events:none;transition:all .2s}.toast.on{opacity:1;transform:translateY(0)}.hidden{display:none!important}
+@media(max-width:800px){.stats{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}.topinner{padding-bottom:30px}.eyebrow{margin-top:30px}}
+@media(max-width:530px){.wrap{padding-left:13px;padding-right:13px}.tabs{padding:5px}.tab{padding:10px 11px;font-size:13px}.hero h1{font-size:34px}.offline{font-size:11px}.stats{gap:8px}.stat{padding:13px}.stat .value{font-size:26px}.card{padding:16px}.flash{min-height:310px}.rating{gap:5px}.rating .btn{font-size:12px}.options{grid-template-columns:1fr}.scene-list{grid-template-columns:1fr 1fr}.scene{padding:9px}.section-header h2{font-size:21px}.speech,.taskbox{max-width:97%}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap topinner">
+  <div class="brand"><div class="brandmark"><span>T</span> My Thai Notebook</div><div class="offline">Works offline · Saves locally</div></div>
+  <div class="hero"><div class="eyebrow">Beginner Thai · Complete revision deck</div><h1>Remember more.<br>Speak with confidence.</h1><p>Study all five sections from your class notes. Only simple English letters for Thai sounds. No Thai writing, no accents, no account required.</p></div>
+</div></header>
+<div class="wrap tabs-wrap"><nav class="tabs" role="tablist" aria-label="Main navigation">
+  <button class="tab active" data-tab="study" role="tab" aria-selected="true">Flashcards</button>
+  <button class="tab" data-tab="quiz" role="tab" aria-selected="false">Quick quiz</button>
+  <button class="tab" data-tab="talk" role="tab" aria-selected="false">Conversation</button>
+  <button class="tab" data-tab="browse" role="tab" aria-selected="false">All phrases</button>
+  <button class="tab" data-tab="progress" role="tab" aria-selected="false">My progress</button>
+</nav></div>
+<main class="wrap main">
+  <div class="stats" aria-label="Learning statistics">
+    <div class="stat"><div class="value" id="stat-total">0</div><div class="name">Cards in your deck</div></div>
+    <div class="stat"><div class="value" id="stat-seen">0</div><div class="name">Cards practiced</div></div>
+    <div class="stat"><div class="value" id="stat-master">0</div><div class="name">Strong cards</div></div>
+    <div class="stat"><div class="value" id="stat-today">0</div><div class="name">Reviews today</div></div>
+  </div>
+
+  <section class="panel active" id="panel-study" aria-label="Flashcard practice">
+    <div class="section-header"><div><h2>Flashcard practice</h2><p class="sub">Say your answer out loud, then flip to check yourself.</p></div><div class="filter-bar"><label for="study-section" class="smallprint">Section</label><select id="study-section" class="section-select"></select></div></div>
+    <div class="two-col"><div>
+      <div class="controls"><label for="study-direction">Show me</label><select id="study-direction"><option value="english">English → Thai sounds</option><option value="thai">Thai sounds → English</option><option value="mixed">Mixed directions</option></select><select id="study-filter" aria-label="Select card group"><option value="all">All cards</option><option value="new">New only</option><option value="due">Due for review</option><option value="saved">Bookmarked</option></select></div>
+      <div id="flash-area"><div class="flash" id="flash" tabindex="0" role="button" aria-label="Flip flashcard"><div class="corner" id="flash-meta"></div><button class="star" id="flash-star" aria-label="Bookmark card" title="Bookmark">★</button><div class="prompt" id="flash-label"></div><div class="big" id="flash-front"></div><div class="hint" id="flash-helper"></div><div class="back hidden" id="flash-back"><div class="answer" id="flash-answer"></div><div class="extra" id="flash-extra"></div></div><div class="tap" id="flash-tap">Click to show the answer · or press Space</div></div>
+      <div id="ratings" class="rating hidden"><button class="btn bad" data-rating="again">1 · Again</button><button class="btn hard" data-rating="hard">2 · Hard</button><button class="btn good" data-rating="good">3 · Good</button><button class="btn easy" data-rating="easy">4 · Easy</button></div>
+      <div class="studyfoot"><span id="study-status">Ready to begin</span><button class="btn small" id="study-skip">Skip / another card →</button></div></div></div>
+      <aside class="card side"><span class="tag">How to learn</span><h3 style="margin-top:13px">Recall first. Check second.</h3><div class="steps"><div class="step"><span class="bubble">1</span><span>Read the English prompt, then <b>say the Thai phrase aloud</b> without peeking.</span></div><div class="step"><span class="bubble">2</span><span>Flip the card and compare your answer.</span></div><div class="step"><span class="bubble">3</span><span>Choose Again, Hard, Good or Easy. Difficult cards return sooner.</span></div><div class="step"><span class="bubble">4</span><span>Come back tomorrow and review what is due.</span></div></div>
+      <div class="divider"></div><h3>Today's practice goal</h3><div class="barline"><span id="daily-label">0 of 15 reviews</span><span id="daily-pct">0%</span></div><div class="meter"><span id="daily-meter" style="width:0%"></span></div><p style="margin-bottom:0">Short sessions work better than trying to memorize everything in one sitting.</p><div class="divider"></div><div class="smallprint">Keyboard: <span class="kbd">Space</span> flip; <span class="kbd">1</span> to <span class="kbd">4</span> rate after flipping.</div></aside>
+    </div>
+  </section>
+
+  <section class="panel" id="panel-quiz" aria-label="Multiple-choice quiz"><div class="section-header"><div><h2>Quick quiz</h2><p class="sub">Test your memory with four possible answers.</p></div><div class="filter-bar"><label class="smallprint" for="quiz-section">Section</label><select id="quiz-section" class="section-select"></select></div></div><div class="two-col"><div class="card quizcard"><div class="barline"><span class="tag" id="quiz-counter">Question 1</span><strong id="quiz-score">0 correct</strong></div><div id="quiz-main"><div class="smallprint" id="quiz-direction">Choose the correct Thai phrase</div><div class="quizprompt" id="quiz-question"></div><div class="options" id="quiz-options"></div><div id="quiz-feedback" class="feedback hidden"></div><button id="quiz-next" class="btn primary hidden" style="margin-top:15px">Next question →</button></div></div><aside class="card side"><h3>Quiz results</h3><div style="font-size:35px;font-weight:850" id="quiz-percent">—</div><p id="quiz-score-detail">Answer a question to see your score.</p><div class="divider"></div><div class="controls"><label for="quiz-mode">Direction</label><select id="quiz-mode"><option value="english">English to Thai sounds</option><option value="thai">Thai sounds to English</option><option value="mixed">Mixed</option></select></div><button class="btn wide" id="quiz-restart">Restart quiz</button><p>Quiz answers are recorded in your progress so you can spot tricky cards.</p></aside></div></section>
+
+  <section class="panel" id="panel-talk" aria-label="Guided conversations"><div class="section-header"><div><h2>Guided conversations</h2><p class="sub">Practise what you would actually say in Thailand.</p></div></div><div class="two-col"><div><div class="card"><div class="tag">Choose a situation</div><div class="scene-list" id="scene-list"></div><div class="barline"><b id="scene-title">Meeting someone</b><span id="scene-count">1 / 4</span></div><div class="meter" style="margin-bottom:17px"><span id="scene-meter" style="width:0%"></span></div><div class="chatbox"><div class="speech"><div class="who">Thai speaker</div><div class="words" id="scene-they"></div><div class="smallprint" id="scene-they-meaning"></div></div><div class="taskbox"><div class="who">Your turn · say it aloud</div><div id="scene-task"></div></div><div id="scene-answer" class="answerbox hidden"></div></div><div class="controls" style="margin-top:15px"><button class="btn primary" id="scene-reveal">Show what to say</button><button class="btn teal hidden" id="scene-next">I said it · Next →</button><button class="btn hidden" id="scene-retry">I need another try</button></div></div></div><aside class="card side"><h3>Speak naturally</h3><p>Imagine the situation. Answer out loud before you click Show what to say. You can repeat scenes as often as you want.</p><div class="divider"></div><p><b>Polite ending:</b> Use <b>khrap</b> if speaking as a man, or <b>kha</b> if speaking as a woman. The examples use <b>khrap</b>, like your class notes.</p><p><b>Romanization:</b> The English-letter spelling is approximate. Thai has tones, which your notes do not mark. Listening to a native teacher is still useful.</p><div class="divider"></div><p id="scene-completed-text">Practice one conversation at a time.</p></aside></div></section>
+
+  <section class="panel" id="panel-browse" aria-label="Complete phrase library"><div class="section-header"><div><h2>Complete phrase library</h2><p class="sub">Browse, search and bookmark full everyday questions and answers from all five sections.</p></div><div class="filter-bar"><label class="smallprint" for="browse-section">Section</label><select id="browse-section" class="section-select"></select></div></div><div class="list-tools"><input type="search" id="browse-search" placeholder="Search English or Thai sounds…" aria-label="Search phrases"><select id="browse-status" aria-label="Filter phrase status"><option value="all">All phrases</option><option value="new">Not yet practiced</option><option value="weak">Needs practice</option><option value="mastered">Strong cards</option><option value="saved">Bookmarked</option></select></div><div class="smallprint" id="browse-count" style="margin-bottom:12px"></div><div class="phrase-list" id="phrase-list"></div></section>
+
+  <section class="panel" id="panel-progress" aria-label="Progress and local data"><div class="section-header"><div><h2>Your learning progress</h2><p class="sub">Everything below is saved on this browser, on this device.</p></div></div><div class="two-col"><div class="card"><h3>Progress by section</h3><div id="section-progress" class="section-progress"></div><div class="divider"></div><div class="barline"><b>Overall cards practised</b><span id="overall-percentage"></span></div><div class="meter"><span id="overall-meter" style="width:0%"></span></div><p class="smallprint" style="margin-bottom:0">Strong = a card with enough successful reviews to reach a review interval of at least seven days.</p></div><aside class="card side"><h3>Manage your progress</h3><p>Your ratings, quiz answers, bookmarked cards and conversation position are saved to browser local storage. No internet connection or signup is needed.</p><div class="settings"><label for="goal-input">Daily goal</label><select id="goal-input"><option value="5">5 reviews</option><option value="10">10 reviews</option><option value="15">15 reviews</option><option value="20">20 reviews</option><option value="30">30 reviews</option></select></div><button class="btn wide" id="export-btn">Export progress as JSON</button><div style="height:8px"></div><label class="btn wide" for="import-file" style="display:block;text-align:center;cursor:pointer">Import saved progress</label><input type="file" id="import-file" accept="application/json,.json" class="hidden"><div class="divider"></div><button class="btn bad wide" id="reset-btn">Reset all saved progress</button><p class="smallprint">Private browsing, clearing site data, or opening the file in another browser can give you a different saved state. Export a backup if you want to move it.</p></aside></div><div class="card" style="margin-top:18px"><h3>Helpful corrections from your class notes</h3><ul class="hintlist"><li><b>mai</b> can mean not, or mark a question. The spoken tones differ, although we keep simple letters here.</li><li><b>gai</b> means chicken; <b>khai</b> means egg. Easy to confuse when ordering!</li><li><b>khao</b> can mean rice or he/she depending on pronunciation and tone.</li><li><b>mai pen rai</b> means it's okay / no problem and can also be a polite response to thanks.</li><li><b>khaw long trong nee</b> means I'd like to get off here. <b>long</b> (get off) and <b>lawng</b> (try) are different words.</li><li>These are classroom-style English-letter approximations, not a precise pronunciation system. Some spellings are normalized for clarity.</li></ul></div></section>
+  <div class="footer">All five class sections, rewritten as usable questions and answers · Offline, single-file learning tool</div>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+'use strict';
+// Each card: [Thai in basic English letters, English meaning, optional learning note].
+// Each card teaches a complete, usable spoken question or answer.
+const SECTIONS=[
+  {
+    "name": "1. Greetings and introductions",
+    "short": "Greetings",
+    "cards": [
+      [
+        "Sa wat dee khrap",
+        "Hello (said by a man)",
+        "Use kha when speaking as a woman."
+      ],
+      [
+        "Sa wat dee kha",
+        "Hello (said by a woman)",
+        "Khrap and kha are polite ending words."
+      ],
+      [
+        "Khun sa bai dee mai",
+        "How are you?",
+        "Mai at the end makes this a question."
+      ],
+      [
+        "Pom sa bai dee khrap",
+        "I am fine",
+        "Speaking as a man."
+      ],
+      [
+        "Pom mai sa bai khrap",
+        "I am not feeling well",
+        "Mai before the adjective means not."
+      ],
+      [
+        "Khun chue arai khrap?",
+        "What is your name?",
+        "Focus: Khun chue arai = What is your name?. Literally: you, name, what?"
+      ],
+      [
+        "Pom chue Fahad khrap",
+        "My name is Fahad",
+        "Replace Fahad with your own name."
+      ],
+      [
+        "Laew khun la khrap?",
+        "And you?",
+        "Focus: Laew khun la = And you?. Useful for returning a question."
+      ],
+      [
+        "Yin dee tee dai roo jak khrap",
+        "Nice to meet you.",
+        "Focus: Yin dee tee dai roo jak = Nice to meet you. Remember the full pattern: yin dee tee dai roo jak."
+      ],
+      [
+        "Khun ma jak tee nai khrap?",
+        "Where are you from?",
+        "Focus: Khun ma jak tee nai = Where are you from?. Ma jak = come from."
+      ],
+      [
+        "Pom ma jak Qatar khrap",
+        "I am from Qatar",
+        "Replace Qatar with another place."
+      ],
+      [
+        "Khop khun khrap",
+        "Thank you (said by a man)"
+      ],
+      [
+        "Khop khun kha",
+        "Thank you (said by a woman)"
+      ],
+      [
+        "Mai pen rai khrap",
+        "No problem. / You are welcome.",
+        "Focus: Mai pen rai = No problem or it is okay or you are welcome. Meaning depends on the situation."
+      ],
+      [
+        "Yin dee khrap",
+        "You are very welcome.",
+        "Focus: Yin dee = With pleasure or you are welcome. Yin dee also means pleased or glad."
+      ],
+      [
+        "Khor thot khrap",
+        "Sorry / excuse me (said by a man)"
+      ],
+      [
+        "Pom pai talat khrap",
+        "I am going to the market.",
+        "Focus: Pom = I or me (common male form)."
+      ],
+      [
+        "Chan chue Anna kha",
+        "My name is Anna. (said by a woman)",
+        "Focus: Chan = I or me (commonly used by women). Usage depends on formality and situation."
+      ],
+      [
+        "Khao pai raan ahaan khrap",
+        "He or she is going to a restaurant.",
+        "Focus: Khao = He or she. Pronunciation and tone differ from khao meaning rice."
+      ],
+      [
+        "Puak khao pai talat khrap",
+        "They are going to the market.",
+        "Focus: Puak khao = They or them."
+      ],
+      [
+        "Puak rao pai raan ahaan khrap",
+        "We are going to a restaurant.",
+        "Focus: Puak rao = We or us."
+      ],
+      [
+        "Khun pai tee nai khrap?",
+        "Where are you going?",
+        "Focus: Khun = You or polite title."
+      ],
+      [
+        "An nee dee mai khrap?",
+        "Is this good?",
+        "Focus: Dee = Good."
+      ],
+      [
+        "Khao chue arai khrap?",
+        "What is his or her name?",
+        "Focus: Chue = Name."
+      ],
+      [
+        "Khun ao arai khrap?",
+        "What would you like?",
+        "Focus: Arai = What."
+      ],
+      [
+        "Khun ja ma mai khrap?",
+        "Are you coming?",
+        "Focus: Ma = Come."
+      ],
+      [
+        "Khun ma jak Thailand mai khrap?",
+        "Are you from Thailand?",
+        "Focus: Jak = From."
+      ],
+      [
+        "Hong nam yu tee nai khrap?",
+        "Where is the bathroom?",
+        "Focus: Tee nai = Where or at which place."
+      ],
+      [
+        "Chai khrap, pom ma jak Qatar",
+        "Yes, I am from Qatar.",
+        "Focus: Chai = Yes or correct."
+      ],
+      [
+        "Mai chai khrap",
+        "No, that is not correct.",
+        "Focus: Mai = Not or no. This is the negative mai; a similar sounding mai can mark a question."
+      ],
+      [
+        "Mee nam mai khrap?",
+        "Do you have water?",
+        "Focus: Mee = Have or there is."
+      ],
+      [
+        "Pom mai mee ngoen sot khrap",
+        "I do not have cash.",
+        "Focus: Pom mai mee = I do not have any."
+      ],
+      [
+        "Pom mai tong kan an nee khrap",
+        "I do not want this one.",
+        "Focus: Pom mai tong kan = I do not want or need it. Tong kan = want or need."
+      ],
+      [
+        "Talat yu tee nai khrap?",
+        "Where is the market?",
+        "Focus: Talat = Market."
+      ],
+      [
+        "Raan ahaan yu tee nai khrap?",
+        "Where is the restaurant?",
+        "Focus: Raan ahaan = Restaurant."
+      ],
+      [
+        "Rong phayaban yu tee nai khrap?",
+        "Where is the hospital?",
+        "Focus: Rong phayaban = Hospital."
+      ]
+    ]
+  },
+  {
+    "name": "2. Daily life and food",
+    "short": "Food and daily life",
+    "cards": [
+      [
+        "Wan nee khun tham arai khrap?",
+        "What are you doing today?",
+        "Focus: Wan nee = Today."
+      ],
+      [
+        "Muea wan pom tham ngan khrap",
+        "I worked yesterday.",
+        "Focus: Muea wan = Yesterday."
+      ],
+      [
+        "Phrung nee pom rian phasa Thai khrap",
+        "I will study Thai tomorrow.",
+        "Focus: Phrung nee = Tomorrow."
+      ],
+      [
+        "Muea wan suen pom mai tham ngan khrap",
+        "I did not work the day before yesterday.",
+        "Focus: Muea wan suen = The day before yesterday."
+      ],
+      [
+        "Ma reun pom pai talat khrap",
+        "I am going to the market the day after tomorrow.",
+        "Focus: Ma reun = The day after tomorrow."
+      ],
+      [
+        "Ton nee pom kam lang gin khao khrap",
+        "I am eating right now.",
+        "Focus: Ton nee = Right now or at this moment."
+      ],
+      [
+        "Ton nan pom kam lang tham ngan khrap",
+        "I was working at that time.",
+        "Focus: Ton nan = At that time."
+      ],
+      [
+        "Khun yak gin khao mai khrap?",
+        "Would you like to eat?",
+        "Focus: Gin = Eat."
+      ],
+      [
+        "Khor khao neung jaan khrap",
+        "May I have one plate of rice?",
+        "Focus: Khao = Rice or a meal. Not the same spoken tone as khao meaning he or she."
+      ],
+      [
+        "Pom yak non laew khrap",
+        "I want to sleep now.",
+        "Focus: Non = Sleep."
+      ],
+      [
+        "Khun tuen non gee mong khrap?",
+        "What time do you wake up?",
+        "Focus: Tuen non = Wake up."
+      ],
+      [
+        "Khun yak duem nam mai khrap?",
+        "Would you like to drink some water?",
+        "Focus: Duem = Drink."
+      ],
+      [
+        "Khor nam neung gaew khrap",
+        "May I have one glass of water?",
+        "Focus: Nam = Water."
+      ],
+      [
+        "Mee nam phon la mai mai khrap?",
+        "Do you have fruit juice?",
+        "Focus: Nam phon la mai = Fruit juice."
+      ],
+      [
+        "Wan nee khun tham ngan mai khrap?",
+        "Are you working today?",
+        "Focus: Tham ngan = Work."
+      ],
+      [
+        "Khun rian phasa Thai mai khrap?",
+        "Are you studying Thai?",
+        "Focus: Rian = Study or learn."
+      ],
+      [
+        "Pom kam lang tham ngan khrap",
+        "I am working right now.",
+        "Focus: Kam lang = Currently or doing something now. Put it before a verb for an action happening now."
+      ],
+      [
+        "Pom gin khao laew khrap",
+        "I have eaten already.",
+        "Focus: Pom gin khao = I eat rice or I eat a meal."
+      ],
+      [
+        "Pom kam lang gin khao khrap",
+        "I am eating a meal right now.",
+        "Focus: Pom kam lang gin khao = I am eating rice. Kam lang + verb = action in progress."
+      ],
+      [
+        "Khor pad kra pao neung jaan khrap",
+        "One plate of basil stir-fry, please.",
+        "Focus: Pad kra pao = Thai basil stir-fry. Often ordered with chicken, beef, tofu, etc."
+      ],
+      [
+        "Pom ao pad kra pao gai khrap",
+        "I would like chicken basil stir-fry.",
+        "Focus: Pad kra pao gai = Basil stir-fry with chicken."
+      ],
+      [
+        "Pom ao pad kra pao tao huu khrap",
+        "I would like tofu basil stir-fry.",
+        "Focus: Pad kra pao tao huu = Basil stir-fry with tofu."
+      ],
+      [
+        "Pom ao pad kra pao neua khrap",
+        "I would like beef basil stir-fry.",
+        "Focus: Pad kra pao neua = Basil stir-fry with beef."
+      ],
+      [
+        "An nee mee gai mai khrap?",
+        "Does this contain chicken?",
+        "Focus: Gai = Chicken. Khai means egg; do not mix them up."
+      ],
+      [
+        "Khor khai neung fong khrap",
+        "One egg, please.",
+        "Focus: Khai = Egg. Gai means chicken."
+      ],
+      [
+        "Pom ao tao huu khrap",
+        "I would like tofu.",
+        "Focus: Tao huu = Tofu."
+      ],
+      [
+        "An nee mee neua wua mai khrap?",
+        "Does this contain beef?",
+        "Focus: Neua = Beef or meat. By itself neua can mean meat; neua wua is specifically beef."
+      ],
+      [
+        "An nee mee neua gae mai khrap?",
+        "Does this contain lamb or mutton?",
+        "Focus: Gae = Sheep or mutton. More exact menu wording may vary."
+      ],
+      [
+        "Pom ao kaeng khiao wan khrap",
+        "I would like green curry.",
+        "Focus: Kaeng khiao wan = Green curry."
+      ],
+      [
+        "Pom ao kaeng daeng khrap",
+        "I would like red curry.",
+        "Focus: Kaeng daeng = Red curry."
+      ],
+      [
+        "Khor khao niao neung tee khrap",
+        "One serving of sticky rice, please.",
+        "Focus: Khao niao = Sticky rice."
+      ],
+      [
+        "Mee mamuang mai khrap?",
+        "Do you have mangoes?",
+        "Focus: Mamuang = Mango."
+      ],
+      [
+        "Pom ao khao niao mamuang khrap",
+        "I would like mango sticky rice.",
+        "Focus: Khao niao mamuang = Mango sticky rice."
+      ],
+      [
+        "An nee phet mai khrap?",
+        "Is this spicy?",
+        "Focus: Phet = Spicy."
+      ],
+      [
+        "An nee wan mai khrap?",
+        "Is this sweet?",
+        "Focus: Wan = Sweet."
+      ],
+      [
+        "An nee khem mai khrap?",
+        "Is this salty?",
+        "Focus: Khem = Salty."
+      ],
+      [
+        "An nee priao mai khrap?",
+        "Is this sour?",
+        "Focus: Priao = Sour."
+      ],
+      [
+        "Ahaan an nee aroi khrap",
+        "This food is delicious.",
+        "Focus: Aroi = Delicious."
+      ],
+      [
+        "Khor mai phet khrap",
+        "Not spicy, please.",
+        "Focus: Mai phet = Not spicy."
+      ],
+      [
+        "Khor phet nit noi khrap",
+        "A little spicy, please.",
+        "Focus: Phet nit noi = A little spicy."
+      ],
+      [
+        "Khor phet noi khrap",
+        "Please make it mildly spicy.",
+        "Focus: Phet noi = Mildly spicy or less spicy."
+      ],
+      [
+        "Aroi mak khrap",
+        "It is very delicious.",
+        "Focus: Aroi mak = Very delicious."
+      ],
+      [
+        "Khor nam plao neung gaew khrap",
+        "One glass of plain water, please.",
+        "Focus: Nam plao = Plain water."
+      ]
+    ]
+  },
+  {
+    "name": "3. Shopping and bargaining",
+    "short": "Shopping",
+    "cards": [
+      [
+        "An nee khue arai khrap?",
+        "What is this?",
+        "Focus: An nee = This one."
+      ],
+      [
+        "An nee halal mai khrap?",
+        "Is this halal?",
+        "Focus: An nee halal mai = Is this halal?. Halal is a borrowed word; check ingredients when needed."
+      ],
+      [
+        "An nee mee moo mai khrap?",
+        "Does this contain pork?",
+        "Focus: An nee mee moo mai = Does this contain pork?. Moo = pork; mee = have."
+      ],
+      [
+        "Mai ao moo khrap",
+        "I do not want pork.",
+        "Focus: Moo = Pork."
+      ],
+      [
+        "Ra kha thao rai khrap?",
+        "What is the price?",
+        "Focus: Ra kha = Price."
+      ],
+      [
+        "Song an thao rai khrap?",
+        "How much for two items?",
+        "Focus: Thao rai = How much?."
+      ],
+      [
+        "An nee ra kha thao rai khrap?",
+        "How much does this cost?",
+        "Focus: An nee ra kha thao rai = How much does this cost?."
+      ],
+      [
+        "An nee thao rai khrap?",
+        "How much is this?",
+        "Focus: An nee thao rai = How much is this?."
+      ],
+      [
+        "An nee neung roi baht mai khrap?",
+        "Is this 100 baht?",
+        "Focus: Baht = Thai money or baht."
+      ],
+      [
+        "Phaeng pai khrap, lot noi dai mai?",
+        "It is too expensive. Can you lower the price?",
+        "Focus: Phaeng pai = Too expensive."
+      ],
+      [
+        "An nee thook mak khrap",
+        "This is very cheap.",
+        "Focus: Thook = Cheap or inexpensive."
+      ],
+      [
+        "Lot ra kha dai mai khrap?",
+        "Could you lower the price?",
+        "Focus: Lot ra kha = Reduce the price or give a discount."
+      ],
+      [
+        "Lot noi dai mai khrap?",
+        "Can you lower the price a little?",
+        "Focus: Lot noi dai mai = Can you lower the price a little?."
+      ],
+      [
+        "Lot dai mai khrap?",
+        "Can you give me a discount?",
+        "Focus: Lot dai mai = Can you give a discount?."
+      ],
+      [
+        "Pom yak sue an nee khrap",
+        "I want to buy this one.",
+        "Focus: Sue = Buy."
+      ],
+      [
+        "Khun khai an nee mai khrap?",
+        "Do you sell this?",
+        "Focus: Khai = Sell. Khai can also mean egg with a different tone."
+      ],
+      [
+        "Ao an nee khrap",
+        "I will take this one.",
+        "Focus: Ao = Want or take or choose."
+      ],
+      [
+        "Pom ao an nee khrap",
+        "I will take this one.",
+        "Focus: Pom ao an nee = I will take this one."
+      ],
+      [
+        "Mai ao khrap, khop khun khrap",
+        "No thanks. I do not want it.",
+        "Focus: Mai ao = I do not want it."
+      ],
+      [
+        "Pom mai ao an nee khrap",
+        "I do not want this one.",
+        "Focus: Pom mai ao an nee = I do not want this one."
+      ],
+      [
+        "Khor chim noi dai mai khrap?",
+        "Could I have a little taste?",
+        "Focus: Khor chim noi dai mai = May I taste a little?. Useful for trying food."
+      ],
+      [
+        "Khor doo dai mai khrap?",
+        "May I have a look?",
+        "Focus: Khor doo dai mai = May I have a look?."
+      ],
+      [
+        "Khor long sai dai mai khrap?",
+        "May I try it on?",
+        "Focus: Khor long sai dai mai = May I try it on?. For clothing; sai means wear."
+      ],
+      [
+        "Puak rao khor long sai dai mai khrap?",
+        "Can we try this on?",
+        "Focus: Puak rao khor long sai dai mai = Can we try it on?."
+      ],
+      [
+        "Pom mee ngoen sot khrap",
+        "I have cash.",
+        "Focus: Pom mee ngoen sot = I have cash."
+      ],
+      [
+        "Pom mai mee ngoen sot khrap",
+        "I do not have cash.",
+        "Focus: Pom mai mee ngoen = I do not have money."
+      ],
+      [
+        "An nee mot laew khrap",
+        "This one is sold out. (said by the seller)",
+        "Focus: Mot laew = Sold out or out of stock."
+      ],
+      [
+        "Jai duay ngoen sot dai mai khrap?",
+        "Can I pay with cash?",
+        "Focus: Ngoen sot = Cash."
+      ],
+      [
+        "Jai duay bat dai mai khrap?",
+        "Can I pay by card?",
+        "Focus: Bat = Card (such as a payment card)."
+      ],
+      [
+        "Tha sue song an lot dai mai khrap?",
+        "If I buy two, can you give me a discount?",
+        "Focus: Tha sue song an lot dai mai = If I buy two, can you give a discount?."
+      ],
+      [
+        "Ao an nee neung an khrap",
+        "I will take one of these.",
+        "Focus: Ao an nee = I will take this one."
+      ],
+      [
+        "Mai ao laew khrap",
+        "I do not want it anymore.",
+        "Focus: Mai ao laew = I do not want it anymore."
+      ],
+      [
+        "Pom ao song an khrap",
+        "I would like two of these.",
+        "Focus: Song an = Two pieces or two items."
+      ],
+      [
+        "Khor chim an nee dai mai khrap?",
+        "May I taste this?",
+        "Focus: Khor chim = May I taste?."
+      ],
+      [
+        "Khor long sai an nee dai mai khrap?",
+        "May I try this on?",
+        "Focus: Khor long = May I try?. For clothes, use khor long sai to make it clear."
+      ]
+    ]
+  },
+  {
+    "name": "4. Transport and directions",
+    "short": "Transport",
+    "cards": [
+      [
+        "Khuen rot trong nai khrap?",
+        "Where do I board the vehicle?",
+        "Focus: Khuen rot = Get on or board a vehicle."
+      ],
+      [
+        "Pom tong long rot trong nai khrap?",
+        "Where do I need to get off?",
+        "Focus: Long rot = Get off a vehicle."
+      ],
+      [
+        "Khun ja pai tee nai khrap?",
+        "Where are you going?",
+        "Focus: Pai = Go."
+      ],
+      [
+        "Khun ma jak tee nai khrap?",
+        "Where are you coming from?",
+        "Focus: Ma jak = Come from."
+      ],
+      [
+        "Thueng sa tha nee rot fai laew mai khrap?",
+        "Have we reached the train station yet?",
+        "Focus: Thueng = Arrive or reach."
+      ],
+      [
+        "Jot trong nee dai mai khrap?",
+        "Can you stop here?",
+        "Focus: Jot = Stop or park."
+      ],
+      [
+        "Liao trong nee khrap",
+        "Please turn here.",
+        "Focus: Liao = Turn."
+      ],
+      [
+        "Trong pai loei khrap",
+        "Go straight ahead, please.",
+        "Focus: Trong pai = Go straight."
+      ],
+      [
+        "Liao sai khrap",
+        "Turn left, please.",
+        "Focus: Sai = Left."
+      ],
+      [
+        "Liao khwa khrap",
+        "Turn right, please.",
+        "Focus: Khwa = Right."
+      ],
+      [
+        "Paai rot may yu tee nai khrap?",
+        "Where is the bus stop sign?",
+        "Focus: Paai rot may = Bus stop sign. Paai = sign; for bus stop you may also hear tee jot rot may."
+      ],
+      [
+        "Sa tha nee rot fai yu tee nai khrap?",
+        "Where is the train station?",
+        "Focus: Sa tha nee rot fai = Train station."
+      ],
+      [
+        "Kha doi san thao rai khrap?",
+        "How much is the fare?",
+        "Focus: Kha doi san = Fare or passenger fare."
+      ],
+      [
+        "Pai tee nee khrap",
+        "Go to this place, please.",
+        "Focus: Pai tee nee = Go here, please."
+      ],
+      [
+        "Pai sa tha nee rot fai khrap",
+        "Go to the train station, please.",
+        "Focus: Pai sa tha nee rot fai = Go to the train station, please."
+      ],
+      [
+        "Pai thang nai khrap?",
+        "Which way should I go?",
+        "Focus: Pai thang nai = Which way should I go?."
+      ],
+      [
+        "Tong khuen rot trong nai khrap?",
+        "Where do I need to get on?",
+        "Focus: Tong khuen rot trong nai = Where do I need to get on?."
+      ],
+      [
+        "Rot khan nee pai tee nai khrap?",
+        "Where does this vehicle go?",
+        "Focus: Rot khan nee pai tee nai = Where does this vehicle go?."
+      ],
+      [
+        "Jot trong nee dai mai khrap?",
+        "Can you stop here?",
+        "Focus: Jot trong nee dai mai = Can you stop here?."
+      ],
+      [
+        "Khor long trong nee khrap",
+        "I would like to get off here.",
+        "Focus: Khor long trong nee = I would like to get off here. Long means get off; long is not the same as lawng meaning try."
+      ],
+      [
+        "Eek glai mai khrap?",
+        "Is it still far?",
+        "Focus: Eek glai mai = Is it still far?."
+      ],
+      [
+        "Chai wela praman gee na tee khrap?",
+        "About how many minutes will it take?",
+        "Focus: Chai wela praman gee na tee = About how many minutes will it take?."
+      ],
+      [
+        "Rot may khan nee pai tee nai khrap?",
+        "Where does this bus go?",
+        "Focus: Rot may = Bus."
+      ],
+      [
+        "Rot fai pai Buriram mai khrap?",
+        "Does the train go to Buriram?",
+        "Focus: Rot fai = Train."
+      ],
+      [
+        "Tee nee chai mai khrap?",
+        "Is this the right place?",
+        "Focus: Tee nee = Here or this place."
+      ],
+      [
+        "Khor long trong nee khrap",
+        "I would like to get off right here.",
+        "Focus: Trong nee = Right here."
+      ],
+      [
+        "Glai mai khrap?",
+        "Is it far?",
+        "Focus: Glai = Far."
+      ],
+      [
+        "Eek gee na tee ja thueng khrap?",
+        "How many more minutes until we arrive?",
+        "Focus: Gee na tee = How many minutes?."
+      ]
+    ]
+  },
+  {
+    "name": "5. Culture and social Thai",
+    "short": "Culture",
+    "cards": [
+      [
+        "Tong wai mai khrap?",
+        "Should I wai (put my hands together)?",
+        "Focus: Wai = Traditional Thai greeting with palms together."
+      ],
+      [
+        "Sa wat dee khrap, Pee Anna",
+        "Hello, Anna. (addressing an older person)",
+        "Focus: Pee = Older sibling or familiar older person. Often placed before a name, e.g. Pee Anna."
+      ],
+      [
+        "Nong Tom sa bai dee mai?",
+        "Tom, how are you? (addressing someone younger)",
+        "Focus: Nong = Younger sibling or familiar younger person. Often placed before a name, e.g. Nong Tom."
+      ],
+      [
+        "Sa wat dee khrap, Lung Somchai",
+        "Hello, Uncle Somchai.",
+        "Focus: Lung = Uncle or older man."
+      ],
+      [
+        "Khop khun khrap, Pa Mali",
+        "Thank you, Aunt Mali.",
+        "Focus: Pa = Aunt or older woman."
+      ],
+      [
+        "Khun Anna sa bai dee mai khrap?",
+        "How are you, Ms. Anna?",
+        "Focus: Khun Anna = Polite way to address Anna. Khun can mean you and is also used before names."
+      ],
+      [
+        "Pee Anna pai duay kan mai khrap?",
+        "Anna, would you like to go together? (older person)",
+        "Focus: Pee Anna = Anna, addressed as someone older."
+      ],
+      [
+        "Nong Tom gin khao laew mai?",
+        "Tom, have you eaten yet? (younger person)",
+        "Focus: Nong Tom = Tom, addressed as someone younger."
+      ],
+      [
+        "Mai pen rai khrap, kreng jai khrap",
+        "No thanks, I do not want to impose.",
+        "Focus: Kreng jai = Being considerate or not wanting to impose. Not one exact English equivalent."
+      ],
+      [
+        "Mai pen rai khrap, khop khun khrap",
+        "It is okay, thank you.",
+        "Focus: Mai pen rai = It is okay or no problem or do not worry."
+      ],
+      [
+        "Laew tae khun khrap",
+        "It is up to you.",
+        "Focus: Laew tae = Up to you or it depends."
+      ],
+      [
+        "Diao na khrap",
+        "Just a moment, please.",
+        "Focus: Diao = A moment or later."
+      ],
+      [
+        "Jing jing rue khrap?",
+        "Really?",
+        "Focus: Jing jing = Really or actually."
+      ],
+      [
+        "Pom phut phasa Thai dai nit noi khrap",
+        "I can speak a little Thai.",
+        "Focus: Nit noi = A little."
+      ],
+      [
+        "Diao gon khrap",
+        "Please wait a moment.",
+        "Focus: Diao gon = Wait a moment or maybe later. Can soften a response, depending on the context."
+      ],
+      [
+        "Wai khrang na khrap",
+        "Maybe next time.",
+        "Focus: Wai khrang na = Maybe next time."
+      ],
+      [
+        "Khor khit doo gon khrap",
+        "Let me think about it first.",
+        "Focus: Khor khit doo gon = Let me think about it first."
+      ],
+      [
+        "At ja mai dai khrap",
+        "It might not be possible.",
+        "Focus: At ja mai dai = It might not be possible."
+      ],
+      [
+        "Wan Songkran khun pai tee nai khrap?",
+        "Where are you going for Songkran?",
+        "Focus: Songkran = Thai New Year water festival."
+      ],
+      [
+        "Khor phon dai mai khrap?",
+        "May I ask for a blessing?",
+        "Focus: Khor phon = Ask for a blessing."
+      ],
+      [
+        "Tong wai phu yai mai khrap?",
+        "Should I wai an elder?",
+        "Focus: Phu yai = Elder or older person."
+      ],
+      [
+        "Khrop khrua khun sa bai dee mai khrap?",
+        "How is your family?",
+        "Focus: Khrop khrua = Family."
+      ],
+      [
+        "Ahaan aroi mak khrap",
+        "The food is very delicious.",
+        "Focus: Aroi = Delicious."
+      ],
+      [
+        "Ahaan nee phet mai khrap?",
+        "Is this food spicy?",
+        "Focus: Phet = Spicy."
+      ],
+      [
+        "An nee wan mai khrap?",
+        "Is this sweet?",
+        "Focus: Wan = Sweet."
+      ],
+      [
+        "An nee khem mai khrap?",
+        "Is this salty?",
+        "Focus: Khem = Salty."
+      ],
+      [
+        "An nee priao mai khrap?",
+        "Is this sour?",
+        "Focus: Priao = Sour."
+      ],
+      [
+        "Khor thot khrap, pai thang nai khrap?",
+        "Excuse me, which way should I go?",
+        "Focus: Khor thot = Sorry or excuse me."
+      ],
+      [
+        "Sa wat dee khrap, yin dee tee dai roo jak",
+        "Hello, nice to meet you.",
+        "Focus: Sawatdee = Hello."
+      ],
+      [
+        "Khop khun mak khrap",
+        "Thank you very much.",
+        "Focus: Khop khun = Thank you."
+      ],
+      [
+        "Pom tong wai yang ngai khrap?",
+        "How should I wai?",
+        "Focus: Wai lesson: how = Place your palms together and bow your head slightly. The height of the hands depends on context and relationship."
+      ],
+      [
+        "Tong wai ton nai khrap?",
+        "When should I wai?",
+        "Focus: Wai lesson: when = When greeting, thanking or showing respect in suitable situations. Not every casual interaction requires a wai."
+      ],
+      [
+        "Sa wat dee khrap, ajarn",
+        "Hello, teacher. (a respectful greeting)",
+        "Focus: Wai lesson: older people = Show appropriate respect to elders and teachers. Who initiates and returns a wai depends on age, status and context."
+      ],
+      [
+        "Gin duay kan mai khrap?",
+        "Would you like to eat together?",
+        "Focus: Food lesson: sharing = Thai meals often include shared dishes in the middle of the table. Customs vary by family and situation."
+      ],
+      [
+        "Ao eek noi mai khrap?",
+        "Would you like a little more food?",
+        "Focus: Food lesson: politeness = Use polite words when offering, receiving or declining food. Be especially attentive in formal or elder-led settings."
+      ],
+      [
+        "Wai khrang na khrap, khop khun khrap",
+        "Maybe next time, thank you.",
+        "Focus: Communication lesson: indirect no = A soft phrase like wai khrang na can be a polite refusal. It does not always mean a firm future promise."
+      ],
+      [
+        "Wan Songkran pom pai ha khrop khrua khrap",
+        "I am visiting my family for Songkran.",
+        "Focus: Songkran lesson: elders = Families may pour water over elders hands and ask for blessings. Songkran also includes celebrations and temple visits."
+      ],
+      [
+        "Pai wat tong taeng tua yang ngai khrap?",
+        "How should I dress for the temple?",
+        "Focus: Temple lesson: clothing = Dress modestly and follow posted temple rules. Requirements vary by temple."
+      ],
+      [
+        "Tong thot rong thao mai khrap?",
+        "Do I need to remove my shoes?",
+        "Focus: Temple lesson: shoes = Remove shoes where signs or local customs require it. Especially before entering certain sacred indoor areas."
+      ],
+      [
+        "Tee nee tong phut bao bao mai khrap?",
+        "Should I speak quietly here?",
+        "Focus: Temple lesson: behavior = Speak quietly and behave respectfully. Observe the local rules for sitting and showing respect."
+      ],
+      [
+        "Raan seven yu tee nai khrap?",
+        "Where is the 7-Eleven?",
+        "Focus: Everyday places = Markets, restaurants, 7-Eleven, taxi, Grab and coffee shops. Useful places to practise short, polite requests."
+      ],
+      [
+        "Khun ma jak Buriram mai khrap?",
+        "Are you from Buriram?",
+        "Focus: Buriram = A province and city in northeastern Thailand. Mentioned in your notes."
+      ]
+    ]
+  }
+];
+const CARDS=[];
+SECTIONS.forEach((s,si)=>s.cards.forEach((a,ci)=>CARDS.push({id:`s${si+1}-${ci+1}`,section:si+1,thai:a[0],english:a[1],note:a[2]||'',kind:a[3]||'phrase'})));
+const CARD_BY_ID=Object.fromEntries(CARDS.map(c=>[c.id,c]));
+const SCENES=[
+ {id:'hello',name:'Meet someone',detail:'Greetings and introductions',steps:[
+   {them:'Sa wat dee khrap. Khun chue arai?',meaning:'Hello! What is your name?',task:'Say hello and introduce yourself as Fahad.',answer:'Sa wat dee khrap. Pom chue Fahad khrap.',tip:'Pom chue = my name is.'},
+   {them:'Yin dee tee dai roo jak.',meaning:'Nice to meet you.',task:'Say "Nice to meet you" back.',answer:'Yin dee tee dai roo jak khrap.'},
+   {them:'Khun ma jak tee nai?',meaning:'Where are you from?',task:'Say "I am from Qatar".',answer:'Pom ma jak Qatar khrap.'},
+   {them:'Pom ma jak Thailand. Laew khun la?',meaning:'I am from Thailand. And you?',task:'Ask "How are you?" and reply "I am fine".',answer:'Khun sa bai dee mai khrap? Pom sa bai dee khrap.',tip:'Remember: sa bai dee = fine / well.'}
+ ]},
+ {id:'food',name:'Order food',detail:'Restaurant and spice level',steps:[
+   {them:'Sa wat dee khrap. Ao arai dee?',meaning:'Hello. What would you like?',task:'Say "I will take this one".',answer:'Pom ao an nee khrap.'},
+   {them:'Ao phet mai?',meaning:'Would you like it spicy?',task:'Say "Not spicy, please".',answer:'Mai phet khrap.'},
+   {them:'Ao nam mai?',meaning:'Would you like water?',task:'Ask for plain water.',answer:'Ao nam plao khrap.'},
+   {them:'Aroi mai?',meaning:'Is it delicious?',task:'Say "Very delicious".',answer:'Aroi mak khrap.'},
+   {them:'Khop khun khrap.',meaning:'Thank you.',task:'Say "No problem".',answer:'Mai pen rai khrap.'}
+ ]},
+ {id:'shop',name:'At the market',detail:'Prices and bargaining',steps:[
+   {them:'Sa wat dee kha.',meaning:'Hello.',task:'Say hello and ask "How much is this?"',answer:'Sa wat dee khrap. An nee thao rai khrap?'},
+   {them:'Song roi baht.',meaning:'Two hundred baht.',task:'Say "Too expensive".',answer:'Phaeng pai khrap.'},
+   {them:'Ao mai?',meaning:'Do you want it?',task:'Ask for a small discount.',answer:'Lot noi dai mai khrap?'},
+   {them:'Dai kha. Neung roi ha sip baht.',meaning:'Yes. 150 baht.',task:'Say "I will take this one".',answer:'Ao an nee khrap.'},
+   {them:'Khop khun kha.',meaning:'Thank you.',task:'Say "Thank you" politely in return.',answer:'Khop khun khrap.'}
+ ]},
+ {id:'taxi',name:'Taxi ride',detail:'Directions and getting off',steps:[
+   {them:'Pai tee nai khrap?',meaning:'Where are you going?',task:'Say "Go to the train station, please".',answer:'Pai sa tha nee rot fai khrap.'},
+   {them:'Dai khrap.',meaning:'Okay.',task:'Ask "How many minutes will it take?"',answer:'Chai wela praman gee na tee khrap?'},
+   {them:'Praman sip na tee.',meaning:'About ten minutes.',task:'Ask "Is it still far?"',answer:'Eek glai mai khrap?'},
+   {them:'Mai glai khrap.',meaning:'Not far.',task:'Ask the driver to stop here.',answer:'Jot trong nee dai mai khrap?'},
+   {them:'Dai khrap.',meaning:'Okay.',task:'Say "I would like to get off here".',answer:'Khor long trong nee khrap.'}
+ ]},
+ {id:'polite',name:'Be polite',detail:'Social and cultural phrases',steps:[
+   {them:'Sa wat dee kha.',meaning:'Hello.',task:'Greet politely.',answer:'Sa wat dee khrap.'},
+   {them:'Khop khun kha.',meaning:'Thank you.',task:'Say "No problem".',answer:'Mai pen rai khrap.'},
+   {them:'Pai duay kan mai?',meaning:'Would you like to go together?',task:'Politely say "Maybe next time".',answer:'Wai khrang na khrap.'},
+   {them:'Jing jing reu?',meaning:'Really?',task:'Say "Let me think about it first".',answer:'Khor khit doo gon khrap.'}
+ ]}
+];
+const REVISED_CARD_IDS = new Set(["s1-6", "s1-8", "s1-9", "s1-10", "s1-14", "s1-15", "s1-17", "s1-18", "s1-19", "s1-20", "s1-21", "s1-22", "s1-23", "s1-24", "s1-25", "s1-26", "s1-27", "s1-28", "s1-29", "s1-30", "s1-31", "s1-32", "s1-33", "s1-34", "s1-35", "s1-36", "s2-1", "s2-2", "s2-3", "s2-4", "s2-5", "s2-6", "s2-7", "s2-8", "s2-9", "s2-10", "s2-11", "s2-12", "s2-13", "s2-14", "s2-15", "s2-16", "s2-17", "s2-18", "s2-19", "s2-20", "s2-21", "s2-22", "s2-23", "s2-24", "s2-25", "s2-26", "s2-27", "s2-28", "s2-29", "s2-30", "s2-31", "s2-32", "s2-33", "s2-34", "s2-35", "s2-36", "s2-37", "s2-38", "s2-39", "s2-40", "s2-41", "s2-42", "s2-43", "s3-1", "s3-2", "s3-3", "s3-4", "s3-5", "s3-6", "s3-7", "s3-8", "s3-9", "s3-10", "s3-11", "s3-12", "s3-13", "s3-14", "s3-15", "s3-16", "s3-17", "s3-18", "s3-19", "s3-20", "s3-21", "s3-22", "s3-23", "s3-24", "s3-25", "s3-26", "s3-27", "s3-28", "s3-29", "s3-30", "s3-31", "s3-32", "s3-33", "s3-34", "s3-35", "s4-1", "s4-2", "s4-3", "s4-4", "s4-5", "s4-6", "s4-7", "s4-8", "s4-9", "s4-10", "s4-11", "s4-12", "s4-13", "s4-14", "s4-15", "s4-16", "s4-17", "s4-18", "s4-19", "s4-20", "s4-21", "s4-22", "s4-23", "s4-24", "s4-25", "s4-26", "s4-27", "s4-28", "s5-1", "s5-2", "s5-3", "s5-4", "s5-5", "s5-6", "s5-7", "s5-8", "s5-9", "s5-10", "s5-11", "s5-12", "s5-13", "s5-14", "s5-15", "s5-16", "s5-17", "s5-18", "s5-19", "s5-20", "s5-21", "s5-22", "s5-23", "s5-24", "s5-25", "s5-26", "s5-27", "s5-28", "s5-29", "s5-30", "s5-31", "s5-32", "s5-33", "s5-34", "s5-35", "s5-36", "s5-37", "s5-38", "s5-39", "s5-40", "s5-41", "s5-42"]);
+const CONTENT_REVISION = 2;
+const STORAGE_KEY='my-beginner-thai-deck-v1';
+const DEFAULT={contentRevision:CONTENT_REVISION,cards:{},stats:{total:0,correct:0,days:{}},settings:{section:'all',direction:'english',filter:'all',goal:15,quizMode:'english'},scenes:{}};
+let state=readState();let tab='study';let current=null;let flipped=false;let studySeen=new Set();let quiz={index:0,correct:0,answered:false,choice:-1,questions:[],q:null};let sceneIndex=0;let sceneReveal=false;let toastTimer=null;
+function upgradeState(data){
+  if((data.contentRevision||1)>=CONTENT_REVISION)return data;
+  const migrated={...data,cards:{...(data.cards||{})},contentRevision:CONTENT_REVISION};
+  for(const id of REVISED_CARD_IDS){const old=migrated.cards[id];if(old)migrated.cards[id]=old.saved?{saved:true}:{};}
+  return migrated;
+}
+function readState(){try{const raw=localStorage.getItem(STORAGE_KEY);if(!raw)return structuredClone(DEFAULT);const s=JSON.parse(raw);if(!s||typeof s!=='object')throw Error('bad');const upgraded=upgradeState(s);return {contentRevision:CONTENT_REVISION,cards:upgraded.cards||{},stats:{...DEFAULT.stats,...(upgraded.stats||{}),days:upgraded.stats?.days||{}},settings:{...DEFAULT.settings,...(upgraded.settings||{})},scenes:upgraded.scenes||{}}}catch(e){return structuredClone(DEFAULT)}}
+function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state))}catch(e){notify('Storage is unavailable. Your progress may not persist.')}}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function $(id){return document.getElementById(id)}
+function today(){const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
+function cardData(c){return state.cards[c.id]||{}}
+function isMastered(c){const r=cardData(c);return (r.interval||0)>=7}
+function isDue(c){const r=cardData(c);return Boolean(r.reps)&&(r.due||0)<=Date.now()}
+function getSectionCards(id){return id==='all'?CARDS:CARDS.filter(c=>c.section===Number(id))}
+function shuffle(arr){const a=arr.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function notify(msg){const t=$('toast');t.textContent=msg;t.classList.add('on');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('on'),2500)}
+function updateStats(){const seen=CARDS.filter(c=>cardData(c).reps>0).length,master=CARDS.filter(isMastered).length,n=state.stats.days[today()]||0; $('stat-total').textContent=CARDS.length;$('stat-seen').textContent=seen;$('stat-master').textContent=master;$('stat-today').textContent=n;const goal=Number(state.settings.goal)||15;$('daily-label').textContent=`${n} of ${goal} reviews`;$('daily-pct').textContent=`${Math.min(100,Math.round(n/goal*100))}%`;$('daily-meter').style.width=`${Math.min(100,n/goal*100)}%`;const pc=Math.round(seen/CARDS.length*100);$('overall-percentage').textContent=`${seen} / ${CARDS.length} · ${pc}%`;$('overall-meter').style.width=pc+'%';$('goal-input').value=String(goal)}
+function setTab(name){tab=name;document.querySelectorAll('.tab').forEach(b=>{const yes=b.dataset.tab===name;b.classList.toggle('active',yes);b.setAttribute('aria-selected',String(yes))});document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+name));if(name==='study'&&!current)pickCard();if(name==='browse')renderBrowse();if(name==='progress')renderProgress();if(name==='quiz'&&!quiz.q)restartQuiz();if(name==='talk')renderScene()}
+function createSectionSelectors(){document.querySelectorAll('.section-select').forEach(el=>{el.innerHTML='<option value="all">All five sections</option>'+SECTIONS.map((s,i)=>`<option value="${i+1}">${esc(s.name)}</option>`).join('');el.value=state.settings.section;el.addEventListener('change',()=>{state.settings.section=el.value;document.querySelectorAll('.section-select').forEach(x=>x.value=el.value);save();studySeen.clear();pickCard();restartQuiz();renderBrowse()})})}
+function studyCandidates(){const all=getSectionCards(state.settings.section);const f=state.settings.filter;return all.filter(c=>f==='all'||(f==='new'&&!cardData(c).reps)||(f==='due'&&isDue(c))||(f==='saved'&&cardData(c).saved))}
+function pickCard(preferredId){const pool=studyCandidates();flipped=false;const area=$('flash-area');if(!pool.length){area.innerHTML=`<div class="empty"><h3>No cards in this group yet</h3><p class="muted">Try All cards or select another section to keep practising.</p></div>`;$('ratings').classList.add('hidden');$('study-status').textContent='No matching cards';current=null;return}if(!$('flash'))restoreFlashMarkup();let pick=pool.find(c=>c.id===preferredId);if(!pick){let available=pool.filter(c=>!studySeen.has(c.id));if(!available.length){studySeen.clear();available=pool.slice()}if(current&&available.length>1)available=available.filter(c=>c.id!==current.id);const score=c=>{const r=cardData(c);return (isDue(c)?0:(!r.reps?1:2))*1e12+(r.due||0)};available.sort((a,b)=>score(a)-score(b));const top=available.slice(0,Math.min(6,available.length));pick=top[Math.floor(Math.random()*top.length)]}current=pick;studySeen.add(pick.id);renderFlash()}
+function restoreFlashMarkup(){$('flash-area').innerHTML=`<div class="flash" id="flash" tabindex="0" role="button" aria-label="Flip flashcard"><div class="corner" id="flash-meta"></div><button class="star" id="flash-star" aria-label="Bookmark card" title="Bookmark">★</button><div class="prompt" id="flash-label"></div><div class="big" id="flash-front"></div><div class="hint" id="flash-helper"></div><div class="back hidden" id="flash-back"><div class="answer" id="flash-answer"></div><div class="extra" id="flash-extra"></div></div><div class="tap" id="flash-tap">Click to show the answer · or press Space</div></div>`;attachFlashClick()}
+function directionFor(c){if(c.kind==='culture')return 'thai';if(state.settings.direction==='mixed')return (current?.id.split('-').reduce((a,x)=>a+x.length,0)||0)%2?'thai':'english';return state.settings.direction}
+function renderFlash(){if(!current)return;const c=current,dir=directionFor(c),r=cardData(c);$('flash-meta').textContent=`Section ${c.section} · ${r.reps?'Practised':'New'}`;$('flash-label').textContent=c.kind==='culture'?'Culture check':dir==='english'?'Say this in Thai':'What does this mean?';$('flash-front').textContent=dir==='english'?c.english:c.thai;$('flash-answer').textContent=dir==='english'?c.thai:c.english;$('flash-extra').textContent=c.note||'';$('flash-helper').textContent='Think of the answer before flipping';$('flash-back').classList.add('hidden');$('flash-tap').textContent='Click to show the answer · or press Space';$('ratings').classList.add('hidden');$('flash-star').classList.toggle('saved',!!r.saved);$('flash-star').setAttribute('aria-pressed',String(!!r.saved));$('study-status').textContent=`${studyCandidates().length} cards available · ${CARDS.filter(isDue).length} due for review`}
+function flip(){if(!current||flipped)return;flipped=true;$('flash-back').classList.remove('hidden');$('flash-tap').textContent='How well did you remember it?';$('ratings').classList.remove('hidden')}
+function rateCard(rating){if(!current||!flipped)return;const r=cardData(current),old=Number(r.interval)||0;let interval;
+ if(rating==='again')interval=1/1440;
+ else if(rating==='hard')interval=old<1?1/3:Math.max(1,old*1.25);
+ else if(rating==='good')interval=old<1?1:Math.min(180,Math.max(1,old*2.1));
+ else interval=old<1?3:Math.min(180,Math.max(3,old*2.8));
+ const reps=(r.reps||0)+1,pass=rating==='good'||rating==='easy';state.cards[current.id]={...r,reps,interval,due:Date.now()+interval*86400000,last:Date.now(),lastRating:rating,success:(r.success||0)+(pass?1:0)};
+ state.stats.total++;if(pass)state.stats.correct++;state.stats.days[today()]=(state.stats.days[today()]||0)+1;save();updateStats();const last=current.id;pickCard();if(current?.id===last&&studyCandidates().length===1)notify('Review saved! Come back to this one soon.')}
+function attachFlashClick(){$('flash').addEventListener('click',e=>{if(e.target.closest('#flash-star'))return;flip()});$('flash-star').addEventListener('click',e=>{e.stopPropagation();if(!current)return;const r=cardData(current);state.cards[current.id]={...r,saved:!r.saved};save();$('flash-star').classList.toggle('saved',!r.saved);$('flash-star').setAttribute('aria-pressed',String(!r.saved));notify(!r.saved?'Bookmarked':'Bookmark removed')})}
+function selectQuizCards(){return shuffle(getSectionCards(state.settings.section).filter(c=>c.kind!=='culture'))}
+function restartQuiz(){quiz={index:0,correct:0,answered:false,choice:-1,questions:selectQuizCards(),q:null};renderQuiz()}
+function quizDirection(c){if(state.settings.quizMode==='mixed')return quiz.index%2?'thai':'english';return state.settings.quizMode}
+function renderQuiz(){const all=quiz.questions;if(!all.length){$('quiz-question').textContent='No quiz cards here.';$('quiz-options').innerHTML='';$('quiz-feedback').classList.add('hidden');$('quiz-next').classList.add('hidden');return}if(quiz.index>=all.length){$('quiz-counter').textContent='Completed';$('quiz-question').textContent='Quiz complete!';$('quiz-options').innerHTML='';$('quiz-feedback').classList.remove('hidden');$('quiz-feedback').textContent=`You got ${quiz.correct} out of ${all.length} correct. Restart for more practice.`;$('quiz-next').classList.add('hidden');return}
+ const c=all[quiz.index],dir=quizDirection(c),answerKey=dir==='english'?'thai':'english';quiz.q=c;quiz.answered=false;quiz.choice=-1;const decoys=shuffle(CARDS.filter(x=>x.id!==c.id&&x.kind!=='culture'&&x[answerKey]!==c[answerKey]&&x[dir==='english'?'english':'thai']!==c[dir==='english'?'english':'thai'])).slice(0,3);quiz.options=shuffle([c,...decoys]);$('quiz-counter').textContent=`Question ${quiz.index+1} of ${all.length}`;$('quiz-score').textContent=`${quiz.correct} correct`;$('quiz-direction').textContent=dir==='english'?'Choose the matching Thai phrase':'Choose the English meaning';$('quiz-question').textContent=dir==='english'?c.english:c.thai;$('quiz-options').innerHTML=quiz.options.map((x,i)=>`<button class="option" data-index="${i}"><b>${i+1}.</b> ${esc(x[answerKey])}</button>`).join('');$('quiz-feedback').classList.add('hidden');$('quiz-next').classList.add('hidden');$('quiz-percent').textContent=quiz.index?`${Math.round(quiz.correct/quiz.index*100)}%`:'—';$('quiz-score-detail').textContent=`${quiz.correct} correct out of ${quiz.index} answered.`}
+function answerQuiz(i){if(quiz.answered||!quiz.q||i<0||i>=4)return;quiz.answered=true;quiz.choice=i;const good=quiz.options[i].id===quiz.q.id;if(good)quiz.correct++;
+ const r=cardData(quiz.q);state.cards[quiz.q.id]={...r,quizSeen:(r.quizSeen||0)+1,quizCorrect:(r.quizCorrect||0)+(good?1:0)};save();
+ const buttons=[...$('quiz-options').querySelectorAll('.option')];buttons.forEach((b,j)=>{b.disabled=true;if(quiz.options[j].id===quiz.q.id)b.classList.add('correct');else if(j===i)b.classList.add('wrong')});$('quiz-feedback').classList.remove('hidden');$('quiz-feedback').innerHTML=good?'<b>Correct!</b> Nicely remembered.':`<b>Not quite.</b> The correct answer is <b>${esc(quizDirection(quiz.q)==='english'?quiz.q.thai:quiz.q.english)}</b>.`;
+ $('quiz-next').classList.remove('hidden');$('quiz-score').textContent=`${quiz.correct} correct`;$('quiz-percent').textContent=`${Math.round(quiz.correct/(quiz.index+1)*100)}%`;$('quiz-score-detail').textContent=`${quiz.correct} correct out of ${quiz.index+1} answered.`}
+function renderSceneList(){$('scene-list').innerHTML=SCENES.map((s,i)=>{const saved=state.scenes[s.id]||{};return `<button class="scene ${sceneIndex===i?'active':''}" data-scene="${i}"><div class="name">${esc(s.name)}</div><div class="detail">${esc(s.detail)}${saved.completed?' · Completed':''}</div></button>`}).join('')}
+function renderScene(){const sc=SCENES[sceneIndex],record=state.scenes[sc.id]||{},stepIndex=Math.min(Number(record.step)||0,sc.steps.length-1),step=sc.steps[stepIndex];sceneReveal=false;renderSceneList();$('scene-title').textContent=sc.name;$('scene-count').textContent=`${stepIndex+1} / ${sc.steps.length}`;$('scene-meter').style.width=`${Math.round((stepIndex)/sc.steps.length*100)}%`;$('scene-they').textContent=step.them;$('scene-they-meaning').textContent=step.meaning;$('scene-task').textContent=step.task;$('scene-answer').classList.add('hidden');$('scene-answer').textContent='';$('scene-reveal').classList.remove('hidden');$('scene-next').classList.add('hidden');$('scene-retry').classList.add('hidden');const completed=SCENES.filter(s=>state.scenes[s.id]?.completed).length;$('scene-completed-text').textContent=`${completed} of ${SCENES.length} conversations completed. You can replay any scene.`}
+function showSceneAnswer() {const sc=SCENES[sceneIndex],rec=state.scenes[sc.id]||{},i=Math.min(Number(rec.step)||0,sc.steps.length-1),st=sc.steps[i];$('scene-answer').innerHTML=`<div>${esc(st.answer)}</div>${st.tip?`<div style="font-size:12px;font-weight:500;margin-top:5px">${esc(st.tip)}</div>`:''}`;$('scene-answer').classList.remove('hidden');$('scene-reveal').classList.add('hidden');$('scene-next').classList.remove('hidden');$('scene-retry').classList.remove('hidden');sceneReveal=true}
+function advanceScene(didWell){const sc=SCENES[sceneIndex],rec=state.scenes[sc.id]||{},i=Math.min(Number(rec.step)||0,sc.steps.length-1);if(!didWell){notify('No problem. Say it again before moving on.');return}if(i===sc.steps.length-1){state.scenes[sc.id]={step:0,completed:true};save();renderScene();notify('Conversation completed! Replay it or choose another.')}else{state.scenes[sc.id]={...rec,step:i+1};save();renderScene()}}
+function renderBrowse(){const s=$('browse-section').value,q=$('browse-search').value.trim().toLowerCase(),filter=$('browse-status').value;const matches=getSectionCards(s).filter(c=>{const r=cardData(c);return (c.thai+' '+c.english+' '+c.note).toLowerCase().includes(q)&&(filter==='all'||(filter==='new'&&!r.reps)||(filter==='weak'&&r.reps&&!isMastered(c))||(filter==='mastered'&&isMastered(c))||(filter==='saved'&&r.saved))});$('browse-count').textContent=`Showing ${matches.length} of ${getSectionCards(s).length} cards`;$('phrase-list').innerHTML=matches.length?matches.map(c=>{const r=cardData(c);return `<div class="phrase-row"><div><div class="thai">${esc(c.thai)} <span class="tag" style="margin-left:5px">${c.kind==='culture'?'Culture':'S'+c.section}</span></div><div class="translation">${esc(c.english)}</div>${c.note?`<div class="note">${esc(c.note)}</div>`:''}</div><div class="actions"><button class="starbtn ${r.saved?'saved':''}" data-save="${c.id}" title="Bookmark">★</button><button class="btn small" data-practice="${c.id}">Study</button></div></div>`}).join(''):'<div class="empty">No matching phrases. Try a different search or filter.</div>'}
+function renderProgress(){$('section-progress').innerHTML=SECTIONS.map((s,i)=>{const cards=getSectionCards(String(i+1)),seen=cards.filter(c=>cardData(c).reps>0).length,master=cards.filter(isMastered).length,pc=Math.round(seen/cards.length*100);return `<div class="progressrow"><div class="barline"><b>${esc(s.short)}</b><span>${seen}/${cards.length} practiced · ${master} strong</span></div><div class="meter"><span style="width:${pc}%"></span></div></div>`}).join('');updateStats()}
+function exportProgress(){const data=JSON.stringify({app:'My Beginner Thai Practice Deck',version:1,savedAt:new Date().toISOString(),state},null,2);const blob=new Blob([data],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='thai-flashcards-progress.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+function init(){createSectionSelectors();document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));$('study-direction').value=state.settings.direction;$('study-filter').value=state.settings.filter;$('quiz-mode').value=state.settings.quizMode;$('study-direction').addEventListener('change',e=>{state.settings.direction=e.target.value;save();renderFlash()});$('study-filter').addEventListener('change',e=>{state.settings.filter=e.target.value;save();studySeen.clear();pickCard()});attachFlashClick();$('study-skip').addEventListener('click',()=>pickCard());document.querySelectorAll('[data-rating]').forEach(b=>b.addEventListener('click',()=>rateCard(b.dataset.rating)));
+ $('quiz-options').addEventListener('click',e=>{const b=e.target.closest('[data-index]');if(b)answerQuiz(Number(b.dataset.index))});$('quiz-next').addEventListener('click',()=>{quiz.index++;renderQuiz()});$('quiz-restart').addEventListener('click',restartQuiz);$('quiz-mode').addEventListener('change',e=>{state.settings.quizMode=e.target.value;save();restartQuiz()});
+ $('scene-list').addEventListener('click',e=>{const b=e.target.closest('[data-scene]');if(!b)return;sceneIndex=Number(b.dataset.scene);renderScene()});$('scene-reveal').addEventListener('click',showSceneAnswer);$('scene-next').addEventListener('click',()=>advanceScene(true));$('scene-retry').addEventListener('click',()=>advanceScene(false));
+ $('browse-search').addEventListener('input',renderBrowse);$('browse-status').addEventListener('change',renderBrowse);$('phrase-list').addEventListener('click',e=>{const saved=e.target.closest('[data-save]');if(saved){const id=saved.dataset.save,r=state.cards[id]||{};state.cards[id]={...r,saved:!r.saved};save();renderBrowse();return}const practice=e.target.closest('[data-practice]');if(practice){state.settings.section='all';state.settings.filter='all';$('study-section').value='all';$('quiz-section').value='all';$('browse-section').value='all';$('study-filter').value='all';save();setTab('study');pickCard(practice.dataset.practice)}});
+ $('goal-input').addEventListener('change',e=>{state.settings.goal=Number(e.target.value);save();updateStats()});$('export-btn').addEventListener('click',exportProgress);$('import-file').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const o=JSON.parse(await f.text());if(o.app!=='My Beginner Thai Practice Deck'||o.version!==1||!o.state?.cards||!o.state?.settings)throw Error('Wrong file type');if(!confirm('Replace this browser\'s current Thai flashcard progress with the imported data?'))return;state={...upgradeState(o.state),stats:o.state.stats||structuredClone(DEFAULT.stats),settings:{...DEFAULT.settings,...o.state.settings},scenes:o.state.scenes||{}};save();location.reload()}catch(err){alert('Unable to import this file. Please choose a valid progress export.')}finally{e.target.value=''}});
+ $('reset-btn').addEventListener('click',()=>{if(!confirm('Erase all reviews, quiz results, bookmarks and conversation progress saved for this page? This cannot be undone.'))return;state=structuredClone(DEFAULT);save();location.reload()});
+ document.addEventListener('keydown',e=>{if(e.target.closest('input,select,textarea,button'))return;if(tab==='study'){if(e.code==='Space'){e.preventDefault();flip()}else if(flipped&&['1','2','3','4'].includes(e.key))rateCard(['again','hard','good','easy'][Number(e.key)-1])}else if(tab==='quiz'&&['1','2','3','4'].includes(e.key)){answerQuiz(Number(e.key)-1)}});
+ updateStats();pickCard();restartQuiz();renderScene();renderBrowse();renderProgress();}
+init();
+</script>
+</body>
+</html>
